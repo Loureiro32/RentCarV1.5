@@ -74,7 +74,7 @@ p {
     display: flex;
     padding: var(--padding-label);
     display:inline-block ;
-    margin-bottom: 9%;
+    margin-bottom: 7%;
 }
 
 .input {
