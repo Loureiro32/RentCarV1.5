@@ -1,5 +1,6 @@
 @import url("variables.css");
 .navBar {
+    position: fixed;
 	display: flex;
 	height: 40px;
 	position: fixed;
@@ -7,34 +8,38 @@
     align-items: center;
 	width: 100%;
 	background-color: var(--bckg-grey);
-	margin-top: 10px;
-	z-index: 100;
 }
 .rightNav {
 	display: flex;
-    flex-basis: 15%;
-	justify-content: space-evenly;
-	justify-items: center;
+    gap: 16px;
+    align-items: center;
+    padding-right: var(--padding-medium);
+}
+.button {
+    background-color: var(--orange);
+    color: var(--bckgWhite);
+    font-size: var(--font-size-small);
+    font-weight: 600;
+    width: 120px;
+    height: 40px;
+    align-self: center;
+    border: 1px solid var(--orange);
+    border-radius: var(--border-radius-large);
 }
 .register {
-	box-sizing: border-box;
 	background-color: var(--bckgWhite);
-	width: 70px;
-	height: 20px;
-    align-self: center;
+    font-size: var(--font-size-small);
+    color: var(--orange);
 }
 .login {
-	box-sizing: border-box;
+    background-color: var(--orange);
 	color: var(--bckgWhite);
-	width: 70px;
-	height: 20px;
-    align-self: center;
 }
 .buttonProfile {
-	box-sizing: content-box;
 	content: url("/assets/user-circle.svg");
+    object-fit: fill;
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: center;;
 	height: 40px;
 }
 .buttonCompactMenu {
@@ -46,8 +51,20 @@
 }
 .mainImage {
 	content: url("/assets/image\ 9.svg");
-	height: 40px;
+    width: 64px;
+	height: 64px;
 	background-repeat: no-repeat;
 	background-position: center;
 	padding-left: var(--padding-label);
+}
+
+ul{
+    list-style: none;
+}
+
+.offScreenMenu {
+    padding-top: 45px;
+    background-color: var(--bckgWhite);
+    display: flex;
+    
 }

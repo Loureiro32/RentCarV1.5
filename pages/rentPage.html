@@ -2,38 +2,253 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/variables.css" />
+    <link rel="stylesheet" href="/css/searchBar.css" />
+    <link rel="stylesheet" href="/css/navBar.css" />
+    <link rel="stylesheet" href="/css/rentPage.css" />
+    <link rel="stylesheet" href="/css/filterRent.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+    <link rel="stylesheet" href="/css/carCard.css" />
 
     <title>Rent</title>
 </head>
 
 <body>
+    <!-- * NAV BAR COMPONENT -->
+    <header>
+        <div class="navBar">
+            <div class="leftNav">
+                <div class="mainImage"></div>
+            </div>
+            <div class="rightNav">
+                <button class="button login">Login</button>
+                <button class="button register">Register</button>
+                <div class="buttonProfile"></div>
+                <div class="buttonCompactMenu"></div>
+            </div>
+        </div>
+    </header>
+
     <main>
-        <div class="searchBarContainer">
-            <div class="searchWhere">
-                <input type="text" placeholder="Where are you going?">
+        <!-- * SEARCH BAR COMPONENT -->
+        <div class="searchContainer">
+            <div class="searchBarContainer">
+                <div class="searchWhere searchBox">
+                    <input type="text" placeholder="Where are you going?" />
+                </div>
+                <div class="searchDropSpot searchBox">
+                    <input type="text" placeholder="Drop off spot" />
+                </div>
+                <div class="searchDateFrom searchBox">
+                    <input type="date" placeholder="From" />
+                </div>
+                <div class="searchDateUntil searchBox">
+                    <input type="date" placeholder="Until" />
+                </div>
+                <button class="searchIconContainer">
+                    <img src="/assets/searchIcon.png" alt="" />
+                    <p></p>
+                </button>
             </div>
-            <div class="searchDropSpot">
-                <input type="text" placeholder="Drop off spot">
+        </div>
+
+        <!-- * FILTER CONTAINER COMPONENT -->
+        <div class="filtersContainer">
+            <div class="filters">
+                <div class="filter">
+                    <button class="priceBtn">
+                        <span>Price</span>
+                        <img src="/assets/dropdownIconDown.svg" alt="" />
+                    </button>
+                </div>
+                <div class="filter">
+                    <button class="carTypeBtn">
+                        <span>Car Type</span>
+                        <img src="/assets/dropdownIconDown.svg" alt="" />
+                    </button>
+                </div>
+                <div class="filter">
+                    <button class="brandBtn">
+                        <span>Brand</span>
+                        <img src="/assets/dropdownIconDown.svg" alt="" />
+                    </button>
+                </div>
+                <div class="filter">
+                    <button class="seatsBtn">
+                        <span>Seats</span>
+                        <img src="/assets/dropdownIconDown.svg" alt="" />
+                    </button>
+                </div>
+                <div class="filter">
+                    <button class="fuelBtn">
+                        <span>Fuel</span>
+                        <img src="/assets/dropdownIconDown.svg" alt="" />
+                    </button>
+                </div>
             </div>
-            <div class="searchDateFrom">
-                <input type="date" placeholder="From">
+        </div>
+
+        <!-- * DROPDOWNS COMPONENTS -->
+        <div class="dropdownContainers">
+            <div class="priceDropdown hidden">
+                <div class="priceRange">
+                    <span>0€ - 2000€ / day</span>
+                </div>
+                <input type="range" min="0" max="1000" value="500">
             </div>
-            <div class="searchDateUntil">
-                <input type="date" placeholder="Until">
+
+            <div class="carTypeDropdown hidden">
+                <div class="carType">
+                    <input type="checkbox" value="sedan">
+                    <label for="">Sedan</label>
+                </div>
+                <div class="carType">
+                    <input type="checkbox" value="suv">
+                    <label for="">SUV</label>
+                </div>
+                <div class="carType">
+                    <input type="checkbox" value="coupe">
+                    <label for="">Coupe</label>
+                </div>
+                <div class="carType">
+                    <input type="checkbox" value="convertible">
+                    <label for="">Convertible</label>
+                </div>
+
             </div>
-            <div class="searchIconContainer">
-                <img src="./assets/searchIcon.svg" alt="">
-                <p></p>
+
+            <div class="brandDropdown hidden">
+                <div class="brand">
+                    <input type="checkbox" value="audi">
+                    <label for="">Audi</label>
+                </div>
+                <div class="brand">
+                    <input type="checkbox" value="bmw">
+                    <label for="">BMW</label>
+                </div>
+                <div class="brand">
+                    <input type="checkbox" value="mercedes">
+                    <label for="">Mercedes</label>
+                </div>
+                <div class="brand">
+                    <input type="checkbox" value="volkswagen">
+                    <label for="">Volkswagen</label>
+                </div>
+            </div>
+
+            <div class="seatsDropdown hidden">
+                <div class="seats">
+                    <input type="checkbox" value="2">
+                    <label for="">2</label>
+                </div>
+                <div class="seats">
+                    <input type="checkbox" value="4">
+                    <label for="">4</label>
+                </div>
+                <div class="seats">
+                    <input type="checkbox" value="5">
+                    <label for="">5</label>
+                </div>
+                <div class="seats">
+                    <input type="checkbox" value="7">
+                    <label for="">7</label>
+                </div>
+            </div>
+            <div class="fuelDropdown hidden">
+                <div class="fuel">
+                    <input type="checkbox" value="diesel">
+                    <label for="">Diesel</label>
+                </div>
+                <div class="fuel">
+                    <input type="checkbox" value="petrol">
+                    <label for="">Petrol</label>
+                </div>
+                <div class="fuel">
+                    <input type="checkbox" value="electric">
+                    <label for="">Electric</label>
+                </div>
+                <div class="fuel">
+                    <input type="checkbox" value="hybrid">
+                    <label for="">Hybrid</label>
+                </div>
+            </div>
+        </div>
+
+        <!-- * CAR CARD COMPONENT -->
+        <div class="carCardsContainer">
+            <div class="carCard">
+                <div class="carImage">
+                    <img src="/assets/fordFocus.svg" alt="Ford Focus">
+                </div>
+            
+                <div class="carInfo">
+                    <span class="carName">Ford Focus</span>
+                    <span class="carType">Compact Sedan</span>
+                </div>
+            
+                <div class="carFeatures">
+                    <div class="featureBox">
+                        <span>5</span>
+                    </div>
+            
+                    <div class="featureBox">
+                        <span>Manual</span>
+                    </div>
+            
+                    <div class="featureBox">
+                        <span>Diesel</span>
+                    </div>
+            
+                    <div class="featureBox">
+                        <span>5</span>
+                    </div>
+                </div>
+            
+                <div class="carPrice">
+                    <span class="price">20,99 € / dia</span>
+                </div>
             </div>
         </div>
     </main>
+    <footer class="footerContainer">
+        <div class="ContactsInfos footerNormalText">
+            <p class="footerTitles">Contacts</p>
+            <p>Email: <span> rentHere@gmail.com</span></p>
+            <p>Phone: <span> 22765398</span></p>
+            <p>Locations: <span>Portugal, Porto, Trindade</span></p>
+            <p>Schedules: <span> Week open: 8am close: 7pm </span></p>
+        </div>
+    
+        <div class="suportAndMedia">
+            <div class="suportInfos footerNormalText">
+                <p class="footerTitles">ClientSuport</p>
+                <ul class="list">
+                    <li>Client Area</li>
+                    <li>Complaints Book</li>
+                    <li>Payment Methods</li>
+                </ul>
+            </div>
+    
+            <div class="socialMedia">
+                <p class="footerTitles">Social Media</p>
+    
+                <div class="mediaIconsContainer">
+                    <img class="mediaIcon" src="/assets/instagram.png" alt="instagram icon" />
+                    <img class="mediaIcon" src="/assets/facebook.png" alt="faceBook icon" />
+                    <img class="mediaIcon" src="/assets/linkedin.png" alt="linkedin icon" />
+                </div>
+            </div>
+        </div>
+        <div class="help">
+            <a href="">
+                <p class="footerTitles" data-footerTitle="help">help</p>
+            </a>
+        </div>
+    </footer>
+
+    <script src="/js/filters.js"></script>
 </body>
 
 </html>

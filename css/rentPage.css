@@ -1,0 +1,5 @@
+@import url("variables.css");
+
+main{
+    margin-top: var(--margin-medium);
+}
