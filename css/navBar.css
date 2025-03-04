@@ -4,6 +4,7 @@
 	height: 40px;
 	position: fixed;
 	justify-content: space-between;
+    align-items: center;
 	width: 100%;
 	background-color: var(--bckg-grey);
 	margin-top: 10px;
@@ -11,7 +12,7 @@
 }
 .rightNav {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-;
 	justify-items: center;
 }
 .register {
@@ -19,28 +20,31 @@
 	background-color: var(--bckgWhite);
 	width: 70px;
 	height: 20px;
+    align-self: center;
 }
 .login {
 	box-sizing: border-box;
 	color: var(--bckgWhite);
 	width: 70px;
 	height: 20px;
+    align-self: center;
 }
 .buttonProfile {
 	box-sizing: content-box;
-	content: url("/img/user-circle.svg");
-	background-color: var(--bckgWhite);
-	aspect-ratio: 1/1;
+	content: url("/assets/user-circle.svg");
 	background-repeat: no-repeat;
 	background-position: center;
 	height: 40px;
 }
-.compactMenu {
-	box-sizing: content-box;
+.buttonCompactMenu {
+    content: url("/assets/menu-01\ \(2\).svg");
+    box-sizing: content-box;
 	background-color: var(--bckgWhite);
+    height: 30px;
+    align-self: center;
 }
 .mainImage {
-	content: url("/img/image\ 9.svg");
+	content: url("/assets/image\ 9.svg");
 	height: 40px;
 	background-repeat: no-repeat;
 	background-position: center;
