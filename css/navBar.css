@@ -4,10 +4,10 @@
 	height: 40px;
 	position: fixed;
 	justify-content: space-between;
-    align-items: center;
+    align-items:center;
 	width: 100%;
 	background-color: var(--bckg-grey);
-	margin-top: 10px;
+	margin-top: 0px;
 	z-index: 100;
 }
 .rightNav {
@@ -17,17 +17,19 @@
 	justify-items: center;
 }
 .register {
+    border-radius: 24px;
 	box-sizing: border-box;
 	background-color: var(--bckgWhite);
-	width: 70px;
-	height: 20px;
+	width: 100px;
+	height: 30px;
     align-self: center;
 }
 .login {
+    border-radius: 24px;
 	box-sizing: border-box;
 	color: var(--bckgWhite);
-	width: 70px;
-	height: 20px;
+	width: 100px;
+	height: 30px;
     align-self: center;
 }
 .buttonProfile {
@@ -38,6 +40,14 @@
 	height: 30px;
 }
 .buttonCompactMenu {
+    content: url("/assets/menu-01\ \(2\).svg");
+    box-sizing: content-box;
+	background-color: var(--bckg-grey);
+    height: 30px;
+    align-self: center;
+}
+
+.buttonCompactMenu.active{
     content: url("/assets/menu-01\ \(2\).svg");
     box-sizing: content-box;
 	background-color: var(--bckgWhite);
@@ -57,8 +67,22 @@ ul{
 }
 
 .offScreenMenu {
-    padding-top: 45px;
+    margin-top: 40px;
+    padding-top: 10px;
+    position: fixed;
     background-color: var(--bckgWhite);
     display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 450px;
+    height: 100%;
+    top: 0%;
+    right: -450px;
+    transition: .3s ease;
+}
+
+.offScreenMenu.active {
+    border: 1px solid var(--orange);
+    right: 0;
     
 }
