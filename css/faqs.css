@@ -1,0 +1,22 @@
+@import url("variables.css");
+@import url("navBar.css");
+
+body{
+    background-color: #F7F5F1;
+}
+.main{
+    text-align: center;
+    padding: 30px
+}
+.main p{
+    font-size: 20px;
+}
+.image{
+    margin-bottom: -28px;
+    text-align: center;
+}
+.faq{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 50px;
+}

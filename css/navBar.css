@@ -1,0 +1,48 @@
+@import url("variables.css");
+.navBar {
+	display: flex;
+	height: 40px;
+	position: fixed;
+	justify-content: space-between;
+	width: 100%;
+	background-color: var(--bckg-grey);
+	margin-top: 10px;
+	z-index: 100;
+}
+.rightNav {
+	display: flex;
+	justify-content: space-evenly;
+	justify-items: center;
+}
+.register {
+	box-sizing: border-box;
+	background-color: var(--bckgWhite);
+	width: 70px;
+	height: 20px;
+}
+.login {
+	box-sizing: border-box;
+	color: var(--bckgWhite);
+	width: 70px;
+	height: 20px;
+}
+.buttonProfile {
+	box-sizing: content-box;
+	content: url("/img/user-circle.svg");
+	background-color: var(--bckgWhite);
+	aspect-ratio: 1/1;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 40px;
+}
+.compactMenu {
+	box-sizing: content-box;
+	background-color: var(--bckgWhite);
+}
+.mainImage {
+	content: url("/img/image\ 9.svg");
+	height: 40px;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding-left: var(--padding-label);
+}

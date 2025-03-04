@@ -1,0 +1,65 @@
+:root {
+	--formContainer: 0;
+	--input-Text-Field: 100%;
+	--Label: 0;
+	--inputIcons: 10px;
+
+	--footerContaienerBkg: #333333;
+	--footerContaienerHeight: 250px;
+
+	--footerTitlesColor: white;
+	--footerTitlesFontStyle: bold;
+	--footerTitlesSize: 25px;
+
+	--mediaIconSize: 15%;
+}
+
+.footerContaiener {
+	gap: 100px;
+	display: flex;
+	background-color: var(--footerContaienerBkg);
+	height: var(--footerContaienerHeight);
+	padding: 15px;
+}
+
+.footerTitles {
+	margin: 0;
+	color: var(--footerTitlesColor);
+	font-weight: var(--footerTitlesFontStyle);
+	font-size: var(--footerTitlesSize);
+}
+
+.footerNormalText {
+	color: var(--footerTitlesColor);
+}
+
+.suportAndMedia {
+	display: flex;
+	flex-direction: column;
+}
+
+.ContactsInfos {
+	height: fit-content;
+}
+
+.suportInfos {
+	height: fit-content;
+}
+
+.socialMedia {
+	margin-top: 20px;
+	width: 300px;
+	height: fit-content;
+}
+
+.mediaIcons {
+	margin-top: 10px;
+}
+
+.mediaIconSize {
+	width: var(--mediaIconSize);
+}
+.list {
+	padding-left: 8px;
+	list-style: inside;
+}

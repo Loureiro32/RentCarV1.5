@@ -1,0 +1,28 @@
+:root{
+    --orange: rgba(241, 114, 61, 1);
+    --bckgWhite: rgba(255, 250, 250, 1);
+    --font-family: "Monteserrat",sans-serif;
+    --border-label: 3px solid var(--orange);
+    --bckg-grey: rgba(247, 245, 241, 1)
+    --padding-label: 16px;
+}
+body{
+    margin: 0;
+    background-color: var(--bckg-grey);
+}
+main{
+    box-sizing: border-box;
+    padding-top: 50px;
+}
+.button{
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid var(--orange);
+    background-color: var(--orange);
+}
+.label{
+    border-left: var(--border-label);
+    padding-left: var(--padding-label);
+    width: 100px;
+    font-family: var(--font);
+}
