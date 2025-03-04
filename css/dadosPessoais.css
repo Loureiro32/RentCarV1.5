@@ -1,10 +1,43 @@
 @import url("variables.css");
-.nav > *{
-padding: 40%;
-font-size: 24px;
-font-family: var(--font-family);
+.nav > * {
+    padding: 40%;
+    font-size: 20px;
+    font-family: var(--font-family);
 }
 
+.container * { 
+    box-sizing: border-box;
+    display:flex;
+}
+
+.container { 
+    box-sizing: border-box;
+    display:flex;
+}
+
+.body {
+    background-color: var(--bckgWhite);
+}
+
+p {
+    text-align: center;
+}
+
+.nav{
+    flex-direction: column;
+    width: 20vw;
+    height: 100vh;
+    justify-content: flex-start;
+    align-items: center;
+    justify-items: center;
+}
+
+.column {
+    flex-direction: column;
+    border-right: 2px solid var(--orange);
+    height: 90vh;
+    align-self: flex-end;
+}
 
 .column1 {   
     border: 3px solid transparent;
@@ -12,54 +45,73 @@ font-family: var(--font-family);
     height: 100vh;
     flex-flow: row wrap;
     flex-direction: column;
+    margin-left: 30px;
 }
 
 .names {
     margin-top: 18%;
     flex-flow: row wrap;
-    width: 100%;
-    height: 10%;
     justify-content: space-between;
-}
-
-.first, .last, .phoneNumber, .adressPostal, .NIF,.birth, .email {
-    font-weight: bold;
-    font-size: 24px;
-    font-family: var(--font-family);
-    display: flex;
-    padding: var(--padding-label);
-}
-
-.phoneNumber {
-    height: 12%;
+    margin-bottom: 10%;
 }
 
 .adressPostal {
-    height: 10%;
-    flex-flow: row wrap;
-    width: 100%;
-    height: 10%;
-    justify-content: space-between;
+    flex-flow: row wrap;  
 }
 
-.birth {
-    height: 10%;
+.postalNumber {
+    margin-left: 20%;
 }
 
-.inputName {
-    height: 20%;
-    position: relative;
-    top: 35%;
-    right: 44%;
+.last {
+    margin-left: 73%; 
+}
+
+.first, .last, .phoneNumber, .NIF,.birth, .email, .adress, .postalNumber {
+    font-weight: bold;
+    font-size: 16px;
+    font-family: var(--font-family);
+    display: flex;
+    padding: var(--padding-label);
+    display:inline-block ;
+    margin-bottom: 10%;
+}
+
+.input {
     border: 1px solid transparent;
     border-bottom: 1px solid black;
 }
 
-.inputPhone {
-    height: 50%;
+.column2  {
+    display: flex;
+    align-content: center;
+}
+
+.profilePic {
+    border-radius: 50%;
+    height: 30vh;
     position: relative;
-    top: 70%;
-    right: 52%;
-    border: 1px solid transparent;
-    border-bottom: 1px solid black; 
+    top:10vh;
+    border: 2px solid var(--orange);
+}
+
+.buttonEdit {
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: 1px solid var(--orange);
+    background-color: var(--bckgWhite);
+    height: 40px;
+    width: 60px;
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 30px;
+    position: relative;
+    top: 40vh;
+    right: 2vw;;
+    gap:5px;
+}
+
+.pencil {
+    height: 20px;
+    width: 20px;
 }
