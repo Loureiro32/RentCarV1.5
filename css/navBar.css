@@ -1,11 +1,12 @@
 @import url("variables.css");
 .navBar {
 	display: flex;
-	height: 40px;
+	height: 60px;
 	position: fixed;
 	justify-content: space-between;
     align-items:center;
 	width: 100%;
+
 	background-color: var(--bckg-grey);
 	margin-top: 0px;
 	z-index: 100;
@@ -21,7 +22,7 @@
 	box-sizing: border-box;
 	background-color: var(--bckgWhite);
 	width: 140px;
-	height: 30px;
+	height: 40px;
     align-self: center;
 }
 .login {
@@ -29,7 +30,7 @@
 	box-sizing: border-box;
 	color: var(--bckgWhite);
 	width: 140px;
-	height: 30px;
+	height: 40px;
     align-self: center;
 }
 .buttonProfile {
@@ -37,13 +38,13 @@
 	content: url("/assets/user-circle.svg");
 	background-repeat: no-repeat;
 	background-position: center;
-	height: 30px;
+	height: 40px;
 }
 .buttonCompactMenu {
     content: url("/assets/menu-01\ \(2\).svg");
     box-sizing: content-box;
 	background-color: var(--bckg-grey);
-    height: 30px;
+    height: 40px;
     align-self: center;
 }
 
