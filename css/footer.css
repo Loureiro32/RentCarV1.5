@@ -1,65 +1,86 @@
 :root {
-	--formContainer: 0;
-	--input-Text-Field: 100%;
-	--Label: 0;
-	--inputIcons: 10px;
-
-	--footerContaienerBkg: #333333;
-	--footerContaienerHeight: 250px;
-
-	--footerTitlesColor: white;
-	--footerTitlesFontStyle: bold;
-	--footerTitlesSize: 25px;
-
-	--mediaIconSize: 15%;
+  --footerContaienerBkg: #333333;
+  --footerContaienerHeight: 250px;
+  --footerTitlesColor: white;
+  --footerTitlesFontStyle: bold;
+  --footerTitlesSize: 25px;
+  --mediaIconSize:45px;
+  --suportAndMediaWidth:180px;
+  --hoverLinkColor:#F1723D;
 }
 
 .footerContaiener {
-	gap: 100px;
-	display: flex;
-	background-color: var(--footerContaienerBkg);
-	height: var(--footerContaienerHeight);
-	padding: 15px;
+  gap: 100px;
+  display: flex;
+  background-color: var(--footerContaienerBkg);
+  height: var(--footerContaienerHeight);
+  padding: 15px;
 }
 
-.footerTitles {
-	margin: 0;
-	color: var(--footerTitlesColor);
-	font-weight: var(--footerTitlesFontStyle);
-	font-size: var(--footerTitlesSize);
+.footerTitles{
+  margin: 0;
+  color: var(--footerTitlesColor);
+  font-weight: var(--footerTitlesFontStyle);
+  font-size: var(--footerTitlesSize);
 }
 
-.footerNormalText {
-	color: var(--footerTitlesColor);
+a{
+  color: var(--footerTitlesColor);
 }
 
-.suportAndMedia {
-	display: flex;
-	flex-direction: column;
+.footerTitles[data-footerTitle="help"]{
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.footerTitles:hover[data-footerTitle="help"]{
+  background-color: transparent;
+  text-decoration: underline;
+  color: var(--hoverLinkColor);
+}
+
+.footerNormalText{
+  color: var(--footerTitlesColor);
+}
+
+.suportAndMedia{
+  display: flex;
+  width: var(--suportAndMediaWidth);
+  flex-direction: column;
 }
 
 .ContactsInfos {
-	height: fit-content;
+  height: fit-content;
 }
 
 .suportInfos {
-	height: fit-content;
+  height: fit-content;
 }
 
-.socialMedia {
-	margin-top: 20px;
-	width: 300px;
-	height: fit-content;
+.socialMedia{
+    margin-top: 20px;
+    width: var(--suportAndMediaWidth);
+    height: fit-content;
 }
 
-.mediaIcons {
-	margin-top: 10px;
+.mediaIconsContainer{
+  margin-top: 10px;
 }
 
-.mediaIconSize {
-	width: var(--mediaIconSize);
+.mediaIcon{
+  background-color: white;
+  width: var(--mediaIconSize);
+  padding: 2px;
 }
+
 .list {
-	padding-left: 8px;
-	list-style: inside;
+  padding-left: 8px;
+  list-style: inside;
+}
+
+.help{
+  display: flex;
+  width: 90%;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
