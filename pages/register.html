@@ -2,18 +2,13 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <title>Rent a Car</title>
-    <link rel="stylesheet" href="/css/home-page.css">
-    <link rel="stylesheet" href="/css/variables.css">
-    <link rel="stylesheet" href="/css/searchBar.css">
-    <link rel="stylesheet" href="/css/navBar.css">
-    <link rel="stylesheet" href="/css/footer.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="/css/variables.css" />
+    <link rel="stylesheet" href="/css/navBar.css" />
+    <link rel="stylesheet" href="/css/registerLogin.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
     <script src="/js/home-page.js" defer></script>
 </head>
 
@@ -49,53 +44,54 @@
 
     </header>
     <main>
-        <div class="rent">
-            <div class="searchContainer">
-                <div class="searchBarContainer">
-                    <div class="searchWhere searchBox">
-                        <input type="text" placeholder="Where are you going?">
+        <section class="loginRegister">
+            <div class="reg2">Register </div>
+        </section>
+        <form class="form2">
+            <section class="fields">
+                <section class="emailAndPwd">
+                    <div class="text">First Name</div>
+                    <div class="line">
+                        <label for="name"></label>
+                        <input type="text" id="fields" />
                     </div>
-                    <div class="searchDropSpot searchBox">
-                        <input type="text" placeholder="Drop off spot">
+                </section>
+                <section class="emailAndPwd">
+                    <div class="text">Last Name</div>
+                    <div class="line">
+                        <label for="name"></label>
+                        <input type="text" id="fields" />
                     </div>
-                    <div class="searchDateFrom searchBox">
-                        <input type="date" placeholder="From">
+                </section>
+                <section class="emailAndPwd">
+                    <div class="text">E-mail</div>
+                    <div class="line">
+                        <label for="email"></label>
+                        <input type="text" id="fields" />
                     </div>
-                    <div class="searchDateUntil searchBox">
-                        <input type="date" placeholder="Until">
+                </section>
+                <section class="emailAndPwd">
+                    <div class="text">Password</div>
+                    <div class="line">
+                        <label for="password"></label>
+                        <input type="password" id="fields" placeholder="Minimum eight characters" />
                     </div>
-                    <a href="/pages/rentPage.html">
-                        <button class="searchIconContainer">
-                            <img src="/assets/searchIcon.png" alt="">
-                            <p></p>
-                        </button>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="flee">
-            <div class="fleetContainer">
-                <div class="fleetTitle">
-                    <p>Our Fleet</p>
-                </div>
-                <div class="fleetCars">
-                    <div class="carCard">
-                        <div class="carImage">
-                            <img src="/assets/fordFocus.svg" alt="Ford Focus">
-                        </div>
+                </section>
+                <section class="emailAndPwd">
+                    <div class="text">Confirm Password</div>
+                    <div class="line">
+                        <label for="password"></label>
+                        <input type="password" id="fields" />
                     </div>
-                    <div class="car">
-                        <img src="/assets/car2.jpg" alt="">
-                        <p>Car2</p>
-                    </div>
-                    <div class="car">
-                        <img src="/assets/car3.jpg" alt="">
-                        <p>Car3</p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
+                </section>
+            </section>
+            <section class="socialaccount">
+                <a href=>
+                    <button class="button register edit">
+                        Register
+                    </button></a>
+            </section>
+        </form>
     </main>
     <footer class="footerContainer">
         <div class="ContactsInfos footerNormalText">

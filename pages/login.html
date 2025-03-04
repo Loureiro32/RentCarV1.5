@@ -2,18 +2,13 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <title>Rent a Car</title>
-    <link rel="stylesheet" href="/css/home-page.css">
-    <link rel="stylesheet" href="/css/variables.css">
-    <link rel="stylesheet" href="/css/searchBar.css">
-    <link rel="stylesheet" href="/css/navBar.css">
-    <link rel="stylesheet" href="/css/footer.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/variables.css" />
+    <link rel="stylesheet" href="/css/navBar.css" />
+    <link rel="stylesheet" href="/css/registerLogin.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
     <script src="/js/home-page.js" defer></script>
 </head>
 
@@ -49,52 +44,52 @@
 
     </header>
     <main>
-        <div class="rent">
-            <div class="searchContainer">
-                <div class="searchBarContainer">
-                    <div class="searchWhere searchBox">
-                        <input type="text" placeholder="Where are you going?">
-                    </div>
-                    <div class="searchDropSpot searchBox">
-                        <input type="text" placeholder="Drop off spot">
-                    </div>
-                    <div class="searchDateFrom searchBox">
-                        <input type="date" placeholder="From">
-                    </div>
-                    <div class="searchDateUntil searchBox">
-                        <input type="date" placeholder="Until">
-                    </div>
-                    <a href="/pages/rentPage.html">
-                        <button class="searchIconContainer">
-                            <img src="/assets/searchIcon.png" alt="">
-                            <p></p>
-                        </button>
-                    </a>
-                </div>
-            </div>
+        <div class="loginRegister">
+            <div class="log">Login</div>
+            <div class="reg">Register</div>
         </div>
-        <div class="flee">
-            <div class="fleetContainer">
-                <div class="fleetTitle">
-                    <p>Our Fleet</p>
+        <div class="form">
+            <div class="socialaccount">
+                <a href=>
+                    <button class="social button2">
+                        <img src="/assets/google.png" />
+                        Sign in with Google
+                    </button></a>
+                <a href=>
+                    <button class="social button2">
+                        <img src="/assets/apple.png" />
+                        Sign in with Apple
+                    </button></a>
+            </div>
+            <div class="fields">
+                <div class="emailAndPwd">
+                    <div class="text">E-mail @</div>
+                    <div class="line">
+                        <label for="email"></label>
+                        <input type="text" id="fields" />
+                    </div>
                 </div>
-                <div class="fleetCars">
-                    <div class="carCard">
-                        <div class="carImage">
-                            <img src="/assets/fordFocus.svg" alt="Ford Focus">
-                        </div>
+                <div class="emailAndPwd">
+                    <div class="text">Password
+                        <img src="/assets/inclined-key.png">
                     </div>
-                    <div class="car">
-                        <img src="/assets/car2.jpg" alt="">
-                        <p>Car2</p>
+                    <div class="line">
+                        <label for="password"></label>
+                        <input type="password" id="fields" placeholder="Minimum eight characters" />
                     </div>
-                    <div class="car">
-                        <img src="/assets/car3.jpg" alt="">
-                        <p>Car3</p>
-                    </div>
+                    <div class="forget">Forgot my password </div>
                 </div>
             </div>
-
+            <div class="socialaccount">
+                <a href=>
+                    <button class="button login edit">
+                        Login
+                    </button></a>
+                <a href="/pages/register.html">
+                    <button class="button register edit">
+                        Register
+                    </button></a>
+            </div>
         </div>
     </main>
     <footer class="footerContainer">
