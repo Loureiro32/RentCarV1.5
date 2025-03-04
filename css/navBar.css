@@ -35,7 +35,7 @@
 	content: url("/assets/user-circle.svg");
 	background-repeat: no-repeat;
 	background-position: center;
-	height: 40px;
+	height: 30px;
 }
 .buttonCompactMenu {
     content: url("/assets/menu-01\ \(2\).svg");
@@ -50,4 +50,15 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	padding-left: var(--padding-label);
+}
+
+ul{
+    list-style: none;
+}
+
+.offScreenMenu {
+    padding-top: 45px;
+    background-color: var(--bckgWhite);
+    display: flex;
+    
 }
