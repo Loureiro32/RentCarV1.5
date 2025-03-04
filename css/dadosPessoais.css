@@ -16,14 +16,14 @@
 }
 
 .body {
-    background-color: var(--bckgWhite);
+    background-color: var(--);
 }
 
 p {
     text-align: center;
 }
 
-.nav{
+.nav {
     flex-direction: column;
     width: 20vw;
     height: 100vh;
@@ -49,7 +49,7 @@ p {
 }
 
 .names {
-    margin-top: 18%;
+    margin-top: 10%;
     flex-flow: row wrap;
     justify-content: space-between;
     margin-bottom: 10%;
@@ -74,12 +74,13 @@ p {
     display: flex;
     padding: var(--padding-label);
     display:inline-block ;
-    margin-bottom: 10%;
+    margin-bottom: 9%;
 }
 
 .input {
     border: 1px solid transparent;
     border-bottom: 1px solid black;
+    background-color: transparent;
 }
 
 .column2  {
@@ -115,3 +116,22 @@ p {
     height: 20px;
     width: 20px;
 }
+
+.personalData:hover {
+   font-weight: bold;
+   scale: 1.1;
+   cursor: pointer;
+}
+
+.reservations:hover {
+    font-weight: bold;
+    scale: 1.1;
+    cursor: pointer;
+ }
+
+ .metodoPagamento:hover {
+    font-weight: bold;
+    scale: 1.1;
+    cursor: pointer;
+ }
+
