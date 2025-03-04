@@ -2,6 +2,11 @@
     background-image: url(/assets/saleswoman-talking-customer-car-salon.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 1000px;
+    height: 700px;
     width: 100%;    
+}
+
+.flee{
+    display: flex;
+    
 }
