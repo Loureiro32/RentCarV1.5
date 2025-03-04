@@ -1,6 +1,6 @@
 :root {
-  --footerContaienerBkg: #333333;
-  --footerContaienerHeight: 250px;
+  --footerContainerBkg: #333333;
+  --footerContainerHeight: 250px;
   --footerTitlesColor: white;
   --footerTitlesFontStyle: bold;
   --footerTitlesSize: 25px;
@@ -9,11 +9,11 @@
   --hoverLinkColor:#F1723D;
 }
 
-.footerContaiener {
+.footerContainer {
   gap: 100px;
   display: flex;
-  background-color: var(--footerContaienerBkg);
-  height: var(--footerContaienerHeight);
+  background-color: var(--footerContainerBkg);
+  height: var(--footerContainerHeight);
   padding: 15px;
 }
 
