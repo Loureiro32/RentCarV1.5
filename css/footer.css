@@ -58,7 +58,6 @@ a{
 }
 
 .socialMedia{
-    margin-top: 20px;
     width: var(--suportAndMediaWidth);
     height: fit-content;
 }
