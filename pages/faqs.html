@@ -104,26 +104,35 @@
     </div>
     
     <div class="fromlus">
-        <form class="froms" action="">
+        <form class="froms" action="" method="post">
             <div class="fields">
                 <div class="emailAndPwd">
-                    <div class="text">E-mail</div>
+                    <label for="email" class="text">E-mail</label>
                     <div class="line">
-                        <label for="email"></label>
-                        <input type="text" id="fields" />
+                        <input type="email" id="email" name="email" required placeholder="Enter your email"
+                            class="fields" />
                     </div>
-            </div>
-            <div class="emailAndPwd">
-                <div class="text">Password</div>
+                </div>
+                <div class="emailAndPwd">
+                    <label for="text" class="text">Question</label>
                     <div class="line">
-                        <label for="password"></label>
-                        <input type="password" id="fields" placeholder="Minimum eight characters" />
+                        <input type="password" id="password" name="password" required minlength="8"
+                            placeholder="Introduce your question Title" class="fields" />
                     </div>
+                </div>
+                <div class="emailAndPwd">
+                    <label for="message" class="text">Your Message</label>
+                    <div class="line">
+                        <textarea id="message" name="message" rows="4" placeholder="Type your message here"
+                            class="fields"></textarea>
+                    </div>
+                </div>
+                <div class="submitButton">
+                    <button type="submit" class="submit-btn">Send Message</button>
                 </div>
             </div>
         </form>
     </div>
-    
     
 
     <footer class="footerContainer">
@@ -162,5 +171,4 @@
     </div>
     </footer>
 </body>
-
 </html>
