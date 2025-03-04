@@ -12,7 +12,8 @@
 }
 .rightNav {
 	display: flex;
-	justify-content: space-;
+    flex-basis: 15%;
+	justify-content: space-evenly;
 	justify-items: center;
 }
 .register {
