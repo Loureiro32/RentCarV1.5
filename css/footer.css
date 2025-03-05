@@ -3,15 +3,15 @@
 	--footerContainerHeight: 250px;
 	--footerTitlesColor: white;
 	--footerTitlesFontStyle: bold;
-	--footerTitlesSize: 25px;
+	--footerTitlesSize: 24px;
 	--mediaIconSize: 45px;
-	--suportAndMediaWidth: 180px;
+	--suportAndMediaWidth: 40%;
 	--hoverLinkColor: #f1723d;
 }
 
 .footerContainer {
-	gap: 100px;
 	display: flex;
+    justify-content: space-between;
 	background-color: var(--footerContainerBkg);
 	height: var(--footerContainerHeight);
 	padding: 15px;
@@ -23,7 +23,9 @@
 	font-weight: var(--footerTitlesFontStyle);
 	font-size: var(--footerTitlesSize);
 }
-
+.ContactsInfos > p {
+    padding-bottom: var(--padding-small);
+}
 a {
 	color: var(--footerTitlesColor);
 }
@@ -45,6 +47,7 @@ a {
 
 .suportAndMedia {
 	display: flex;
+    /* todo change width to have always 30 40% */
 	width: var(--suportAndMediaWidth);
 	flex-direction: column;
 }
@@ -58,7 +61,6 @@ a {
 }
 
 .socialMedia {
-	margin-top: 20px;
 	width: var(--suportAndMediaWidth);
 	height: fit-content;
 }
@@ -80,7 +82,6 @@ a {
 
 .help {
 	display: flex;
-	width: 90%;
 	justify-content: flex-end;
 	align-items: flex-end;
 }
