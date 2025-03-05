@@ -1,4 +1,6 @@
 @import url("variables.css");
+@import url("/css/navBar.css");
+@import url("/css/footer.css");
 
 * {
     font-family: var(--font-family);
