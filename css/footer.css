@@ -3,7 +3,7 @@
   --footerTitlesColor: white;
   --footerTitlesFontStyle: bold;
   --footerTitlesSize: 24px;
-  --mediaIconSize: 45px;
+  
   --suportAndMediaWidth: 40%;
   --hoverLinkColor: #F1723D;
 }
@@ -22,7 +22,7 @@
 .ContactsInfos > p {
   padding-bottom: var(--padding-small);
 }
-a {
+a>footer {
   color: var(--footerTitlesColor);
 }
 .footerTitles[data-footerTitle="help"] {
@@ -58,7 +58,6 @@ a {
 }
 .mediaIcon {
   background-color: white;
-  width: var(--mediaIconSize);
   padding: 2px;
 }
 .list {
