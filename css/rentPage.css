@@ -211,6 +211,18 @@ input[type="checkbox"] {
 /* ================================= */
 /* * CAR CARD COMPONENT - From carCard.css */
 /* ================================= */
+.cardLink {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.cardLink:visited, 
+.cardLink:hover, 
+.cardLink:active {
+    color: inherit;
+    text-decoration: none;
+}
 .carCardsContainer {
 	height: 80vh;
     padding: var(--padding-large);
