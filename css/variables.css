@@ -29,8 +29,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-main{
-    padding-top: 60px;
+.button{
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid var(--orange);
+    background-color: var(--orange);
 }
 body{
     margin: 0;
