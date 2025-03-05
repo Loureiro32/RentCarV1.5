@@ -116,6 +116,7 @@ main{
     display: flex;
 	flex-flow: column wrap;
 	width: 1174px;
+    height:800px;
 	border: var(--border-label);
 	border-radius: 10px;
 	margin-left: 150px;
@@ -123,7 +124,6 @@ main{
 	background-color: rgba(208, 202, 190, 0.25);
 	justify-items: flex-start;
     justify-self: center;
-    height:1140px
 }
 
 .socialaccount {
@@ -164,7 +164,7 @@ a,a:hover {
 	border: 0.5px solid lightgrey;
 	width: 100%;
 	height: 40px;
-	padding-left: var(--padding-label);
+	padding-left: 15px;
 	font-size: 16px;
 	font-weight: 400;
 }
@@ -181,7 +181,7 @@ a,a:hover {
 
 .text {
 	border-left: var(--border-label);
-	padding-left: var(--padding-label);
+	padding-left: 16px;
 	font-family: var(--font-family);
 }
 
