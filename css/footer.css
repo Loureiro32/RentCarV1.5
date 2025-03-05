@@ -15,6 +15,7 @@
   background-color: var(--footerContainerBkg);
   height: var(--footerContainerHeight);
   padding: 15px;
+  margin: opx;
 }
 
 .footerTitles{
