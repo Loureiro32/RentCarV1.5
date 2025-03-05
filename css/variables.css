@@ -1,9 +1,10 @@
+@import url("./navBar.css");
 :root{
     --orange: rgba(241, 114, 61, 1);
     --bckgWhite: rgba(255, 250, 250, 1);
-    --font-family: "Monteserrat",sans-serif;
+    --font-family: "Montserrat",sans-serif;
     --border-label: 3px solid var(--orange);
-    --bckg-grey: rgba(247, 245, 241, 1)
+    --bckg-grey: rgba(247, 245, 241, 1);
     --padding-label: 16px;
 }
 body{
