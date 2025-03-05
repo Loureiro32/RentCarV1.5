@@ -1,11 +1,10 @@
 :root {
   --footerContainerBkg: #333333;
-  --footerContainerHeight: 250px;
   --footerTitlesColor: white;
   --footerTitlesFontStyle: bold;
   --footerTitlesSize: 25px;
-  --mediaIconSize:45px;
-  --suportAndMediaWidth:180px;
+  --mediaIconSize:16%;
+  
   --hoverLinkColor:#F1723D;
 }
 
@@ -13,7 +12,6 @@
   gap: 100px;
   display: flex;
   background-color: var(--footerContainerBkg);
-  height: var(--footerContainerHeight);
   padding: 15px;
 }
 
@@ -45,7 +43,7 @@ a{
 
 .suportAndMedia{
   display: flex;
-  width: var(--suportAndMediaWidth);
+  width: 400px;
   flex-direction: column;
 }
 
@@ -59,22 +57,21 @@ a{
 
 .socialMedia{
     margin-top: 20px;
-    width: var(--suportAndMediaWidth);
     height: fit-content;
 }
 
 .mediaIconsContainer{
-  margin-top: 10px;
+  margin-top: 1%;
 }
 
 .mediaIcon{
   background-color: white;
   width: var(--mediaIconSize);
-  padding: 2px;
+  padding: 1%;
 }
 
 .list {
-  padding-left: 8px;
+  padding-left: 1%;
   list-style: inside;
 }
 

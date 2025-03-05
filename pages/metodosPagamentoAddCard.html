@@ -1,62 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <title>Document</title>
+    <title>Login</title>
     <link rel="stylesheet" href="/css/variables.css" />
+    <link rel="stylesheet" href="/css/navBar.css" />
     <link rel="stylesheet" href="/css/metodosPagamentoAddCard.css" />
-  </head>
-  <body>
+    <link rel="stylesheet" href="/css/footer.css" />
+    <script src="/JS/home-page.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navBar">
+            <div class="leftNav">
+                <a href="/pages/homePage.html">
+                    <div class="mainImage"> </div>
+                </a>
+            </div>
+            <div class="rightNav">
+                <a href="/pages/login.html"> <button class="button login">Login</button></a>
+                <a href="/pages/register.html"><button class="button register">Register</button></a>
+                <a href="/pages/dadosPessoais.html">
+                    <div class="buttonProfile"></div>
+                </a>
+                <div class="buttonCompactMenu"></div>
+            </div>
+        </nav>
+
+        <nav class="offScreenMenu">
+            <ul>
+                <li>Your Profile</li>
+                <li>Login</li>
+                <li>Sign up</li>
+                <li>Fleet</li>
+                <li>About us</li>
+                <li>Contacts</li>
+                <li>Insurance & protection</li>
+            </ul>
+        </nav>
+
+    </header>
     <main>
-      <div class="cardInfosContainer">
-        <form action="" class="addNewCard">
-          <div class="lv"></div>
-          <label for="cardNmbr"> Insert card number </label>
-          <input
-            type="text"
-            name="cardNmbr"
-            id="cardNmbrInput"
-            placeholder="1234 1234 1234 1234"
-          />
+        <div class="registerNewCard">
+            <div class="reg">Register new card</div>
+        </div>
+        <div class="form">
+            <div class="fields">
+                <div class="cardInfos">
+                    <div class="text">Card Number</div>
+                    <div class="line">
+                        <label for="CardNumber"></label>
+                        <input type="text" id="fields" placeholder="1234 1234 1234 1234" />
+                    </div>
+                </div>
+                <div class="cardInfos">
+                    <div class="text">Cardholder Name
+                    </div>
+                    <div class="line">
+                        <label for="cardholdername"></label>
+                        <input type="text" id="fields" placeholder="Jane Doe" />
+                    </div>
+                </div>
+                <div class="ExpirationDateAndCVV">
+                  <div class="line">
+                    <div class="text">Expiration date</div>
+                    <label for="Expiration date"></label>
+                    <input type="date" id="fields" placeholder="MM/YY" />
+                </div>
 
-          <label for="CardholderName"> Insert Cardholder Name</label>
-          <input
-            type="text"
-            name="cardNmbr"
-            id="cardNmbrInput"
-            placeholder="Jane doe"
-          />
-
-          <div class="alignDateAndCVV">
-            <div class="alignDate">
-              <label for="ExpirationDate"> Insert Expiration Date </label>
-              <input
-                type="text"
-                name="CardholderName"
-                id="CardholderNameInput"
-                placeholder="mm/yy"
-              />
+                <div class="line">
+                  <div class="text">CVV</div>
+                  <label for="CVV"></label>
+                  <input type="text" id="fields" placeholder="000" />
+              </div>
+                </div>
             </div>
-            <div class="alignCVV">
-              <label for="CVV"> Insert CVV </label>
-              <input
-                type="text"
-                name="cardCvv"
-                id="cardCVVInput"
-                placeholder="000"
-              />
+            <div class="addCardBox">
+                <a href=>
+                    <button class="button addCard edit">
+                        Add Card
+                    </button></a>
             </div>
-          </div>
-          <input type="submit" value="add Card" />
-        </form>
-      </div>
+        </div>
     </main>
-  </body>
+    <footer class="footerContainer">
+        <div class="ContactsInfos footerNormalText">
+            <p class="footerTitles">Contacts</p>
+            <p>Email: <span> rentHere@gmail.com</span></p>
+            <p>Phone: <span> 22765398</span></p>
+            <p>Locations: <span>Portugal, Porto, Trindade</span></p>
+            <p>Schedules: <span> Week open: 8am close: 7pm </span></p>
+        </div>
+
+        <div class="suportAndMedia">
+            <div class="suportInfos footerNormalText">
+                <p class="footerTitles">ClientSuport</p>
+                <ul class="list">
+                    <li>Client Area</li>
+                    <li>Complaints Book</li>
+                    <li>Payment Methods</li>
+                </ul>
+            </div>
+
+            <div class="socialMedia">
+                <p class="footerTitles">Social Media</p>
+
+                <div class="mediaIconsContainer">
+                    <img class="mediaIcon" src="/assets/instagram.png" alt="instagram icon" />
+                    <img class="mediaIcon" src="/assets/facebook.png" alt="faceBook icon" />
+                    <img class="mediaIcon" src="/assets/linkedin.png" alt="linkedin icon" />
+                </div>
+            </div>
+        </div>
+        <div class="help">
+            <a href="/pages/faqs.html">
+                <p class="footerTitles" data-footerTitle="help">help</p>
+            </a>
+        </div>
+    </footer>
+</body>
+
 </html>
