@@ -1,0 +1,90 @@
+@import url("/css/variables.css");
+.carCardsContainer {
+    height: 80vh;
+  }
+  .carCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 1000px;
+    height: 300px;
+    background-color: var(--bckgWhite);
+    border: 1px solid var(--orange);
+    border-radius: var(--border-radius-medium);
+    margin: 16px;
+    padding: 16px;
+    box-shadow: var(--shadow-orange);
+  }
+  .carInfoContainer {
+    display: flex;
+    width: 40%;
+    height: 100%;
+    flex-direction: column;
+    gap: var(--padding-large);
+    padding: var(--padding-medium);
+  }
+  .cardInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .carName {
+    font-size: var(--font-size-large);
+    font-weight: 600;
+  }
+  .carType {
+    font-size: var(--font-size-small);
+    font-weight: 400;
+  }
+  .carFeatures {
+    margin-top: var(--margin-medium);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+  }
+  .featureBox {
+    height: 40px;
+    background-color: var(--orange);
+    color: var(--bckgWhite);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border-radius: var(--border-radius-small);
+  }
+  .featureBox:nth-child(1) {
+    width: 80px;
+  }
+  .featureBox:nth-child(2) {
+    width: 100px;
+  }
+  .featureBox:nth-child(3) {
+    width: 80px;
+  }
+  .featureBox:nth-child(4) {
+    width: 80px;
+  }
+  .btnContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  .repeatReserveBtn {
+    width: 100%;
+    height: 60px;
+    background-color: var(--bckgWhite);
+    color: var(--orange);
+    font-size: var(--font-size-large);
+    font-weight: 600;
+    border: 2px solid var(--orange);
+    border-radius: var(--border-radius-medium);
+  }
+  .price {
+    font-size: var(--font-size-large);
+    font-weight: 600;
+  }
+  

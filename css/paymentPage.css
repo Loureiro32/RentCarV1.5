@@ -1,0 +1,160 @@
+@import url("/css/variables.css");
+@import url("/css/navBar.css");
+@import url("/css/footer.css");
+
+* {
+    font-family: var(--font-family);
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F7F5F1;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.paymentContainer {
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+}
+
+.sectionTitle {
+    margin: 30px 0 15px 0;
+}
+
+.sectionTitle h2 {
+    font-size: var(--font-size-large);
+    color: #555;
+    font-weight: normal;
+}
+
+.paymentForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.formRow {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+}
+
+.twoColumns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    position: relative;
+    margin-bottom: var(--margin-medium);
+}
+
+.formLabel {
+    position: relative;
+    color: #645E5E;
+    font-size: var(--font-size-medium);
+    font-weight: 500;
+    margin-bottom: var(--margin-medium);
+    padding-left: var(--padding-small);
+    border-left: 4px solid var(--orange);
+}
+
+.formInput {
+    width: 100%;
+    height: 45px;
+    padding: 0 15px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    background-color: white;
+    font-size: 14px;
+}
+
+.formInput::placeholder {
+    color: #aaa;
+}
+
+.phoneContent{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: var(--padding-medium);
+}
+
+
+.prefix {
+    text-align: center;
+    flex-basis: 30%;
+}
+
+.totalSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 32px 0;
+    padding: 0 8px;
+}
+
+.totalLabel {
+    font-size: 24px;
+    font-weight: 500;
+    color: #333;
+}
+
+.totalAmount {
+    font-size: 24px;
+    font-weight: 500;
+    color: #333;
+}
+
+.payButton {
+    width: 100%;
+    height: 50px;
+    background-color: var(--orange);
+    color: white;
+    border: none;
+    border-radius: 24px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.payButton:hover {
+    background-color: #d04a1a;
+}
+
+.termsAgreement {
+    margin-top: 24px;
+    font-size: 16px;
+    color: #777;
+    text-align: center;
+    line-height: 1.5;
+    padding: 0 24px;
+}
+
+/* Reusing existing styles for compatibility */
+.form2 {
+    display: none; /* Hide old form styling */
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    .formRow.twoColumns {
+        flex-direction: column;
+    }
+    
+    .paymentContainer {
+        padding: 8px;
+    }
+}
