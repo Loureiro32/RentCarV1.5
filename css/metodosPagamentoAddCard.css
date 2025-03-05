@@ -5,7 +5,6 @@
 * {
   font-family: var(--font-family);
 }
-
 .registerNewCard {
   display: flex;
   width: 620px;
@@ -34,6 +33,7 @@
 .form {
   display: flex;
   flex-flow: column wrap;
+  color: #645E5E;
   height: 756px;
   width: 1174px;
   border: var(--border-label);
