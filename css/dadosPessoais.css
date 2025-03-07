@@ -1,0 +1,146 @@
+@import url("variables.css");
+.nav > * {
+    padding: 40%;
+    font-size: 20px;
+    font-family: var(--font-family);
+}
+
+.container * { 
+    box-sizing: border-box;
+    display:flex;
+}
+
+.container { 
+    box-sizing: border-box;
+    display:flex;
+}
+
+.body {
+    background-color: var(--border-radius-larger);
+}
+
+p {
+    text-align: center;
+    text-decoration: none;
+}
+
+.nav {
+    flex-direction: column;
+    width: 20vw;
+    height: 100vh;
+    justify-content: flex-start;
+    align-items: center;
+    justify-items: center;
+}
+
+.column {
+    flex-direction: column;
+    border-right: 2px solid var(--orange);
+    height: 90vh;
+    align-self: flex-end;
+}
+
+.column1 {   
+    border: 3px solid transparent;
+    width: 50vw;
+    height: 100vh;
+    flex-flow: row wrap;
+    flex-direction: column;
+    margin-left: var(--margin-large);
+}
+
+.names {
+    margin-top: 10%;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-bottom: 10%;
+}
+
+.adressPostal {
+    flex-flow: row wrap;  
+}
+
+.postalNumber {
+    margin-left: 20%;
+}
+
+.last {
+    margin-left: 73%; 
+}
+
+.first, .last, .phoneNumber, .NIF,.birth, .email, .adress, .postalNumber {
+    font-weight: bold;
+    font-size: 16px;
+    font-family: var(--font-family);
+    display: flex;
+    padding: var(--padding-label);
+    display:inline-block ;
+    margin-bottom: 7%;
+}
+
+.input {
+    border: 1px solid transparent;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+}
+
+.column2  {
+    display: flex;
+    align-content: center;
+}
+
+.profilePic {
+    border-radius: 50%;
+    height: 30vh;
+    position: relative;
+    top:10vh;
+    border: 2px solid var(--orange);
+}
+
+.buttonEdit {
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: 1px solid var(--orange);
+    background-color: var(--bckgWhite);
+    height: 40px;
+    width: 60px;
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 30px;
+    position: relative;
+    top: 40vh;
+    right: 2vw;;
+    gap:5px;
+}
+
+.pencil {
+    height: 20px;
+    width: 20px;
+}
+
+
+
+.personalData:hover {
+   font-weight: bold;
+   scale: 1.1;
+   cursor: pointer;
+   text-decoration: none;
+}
+
+.reservations:hover {
+    font-weight: bold;
+    scale: 1.1;
+    cursor: pointer;
+ }
+
+ .metodoPagamento:hover {
+    font-weight: bold;
+    scale: 1.1;
+    cursor: pointer;
+ }
+
+ nav > a {
+    text-decoration: none;
+    color: black;
+}
+

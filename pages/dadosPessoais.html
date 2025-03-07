@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Data</title>
+    <link rel="stylesheet" href="/css/dadosPessoais.css" />
+    <link rel="stylesheet" href="/css/variables.css">
+    <link rel="stylesheet" href="/css/navBar.css">
+    <link rel="stylesheet" href="/css/footer.css">
+</head>
+<header>
+    <nav class="navBar">
+        <div class="leftNav">
+            <a href="/pages/homePage.html">
+                <div class="mainImage"> </div>
+            </a>
+        </div>
+        <div class="rightNav">
+            <a href="/pages/login.html"> <button class="button login">Login</button></a>
+            <a href="/pages/register.html"><button class="button register">Register</button></a>
+            <a href="/pages/dadosPessoais.html">
+                <div class="buttonProfile"></div>
+            </a>
+            <div class="buttonCompactMenu"></div>
+            </div>
+    </nav>
+
+    <nav class="offScreenMenu">
+        <ul>
+            <li>Your Profile</li>
+            <li>Login</li>
+            <li>Sign up</li>
+            <li>Fleet</li>
+            <li>About us</li>
+            <li>Contacts</li>
+            <li>Insurance & protection</li>
+        </ul>
+    </nav>
+
+</header>
+
+<body>
+    <div class="container">
+        <nav class="nav">
+            <a href="/pages/dadosPessoais.html"><p class="personalData">PERSONAL DATA</p></a>
+        
+            <a href="/pages/reservas.html"><p class="reservations">RESERVATIONS  </p></a>
+      
+            <a href="/pages/payment.html"><p class="metodoPagamento">PAYMENT METHODS </p></a>
+    </nav>
+        <div class="column"></div>
+
+
+        <div class="column1">
+            <div class="names">
+                <div class="namesDiv">
+                <div class="first">
+                    <label for="firstName ">First Name</label>
+                    <input class="input" type="text" name="firstName" id="">
+                </div>
+                <div class="last">
+                    <label for="lastName">Last Name</label>
+                    <input class="input" type="text" name="firstName" id="">
+                </div>
+            </div>
+            </div>
+            <div class="email">
+                <label for="email">E-mail</label>
+                <input class="input" type="email" name="email" id="">
+            </div>
+            <div class="phoneNumber">
+                    <label for="phoneNumber">Phone Number</label>
+                    <input class="input" type="tel" name="phoneNumber" id="">
+            </div>
+            <div class="adressPostal">
+                <div class="adress">
+                    <label for="adress">Adress</label>
+                    <input class="input" type="text">
+                </div>
+                <div class="postalNumber">
+                    <label for="postalNumber">Postal Code</label>
+                    <input class="input" type="text" name="" id="">
+                </div>
+            </div>
+            <div class="birth">
+                <label for="birth">Date of birth</label>
+                <input class="input" type="date" name="" id="">
+            </div>
+            <div class="NIF">
+                <label for="nif">NIF</label>
+                <input class="input" type="number" name="nif" id="">
+            </div>
+        </div>
+
+
+        <div class="column2">
+            <img class="profilePic" src="/assets/profile.png" alt="profile pic">
+            <button class="buttonEdit">Edit
+                <img class="pencil" src="/assets/image_pencil.png" alt="">
+            </button> 
+        </div>
+    </div>
+
+    <footer class="footerContainer">
+        <div class="ContactsInfos footerNormalText">
+            <p class="footerTitles">Contacts</p>
+            <p>Email: <span> rentHere@gmail.com</span></p>
+            <p>Phone: <span> 22765398</span></p>
+            <p>Locations: <span>Portugal, Porto, Trindade</span></p>
+            <p>Schedules: <span> Week open: 8am close: 7pm </span></p>
+        </div>
+
+        <div class="suportAndMedia">
+            <div class="suportInfos footerNormalText">
+                <p class="footerTitles">ClientSuport</p>
+                <ul class="list">
+                    <li>Client Area</li>
+                    <li>Complaints Book</li>
+                    <li>Payment Methods</li>
+                </ul>
+            </div>
+
+            <div class="socialMedia">
+                <p class="footerTitles">Social Media</p>
+
+                <div class="mediaIconsContainer">
+                    <img class="mediaIcon" src="/assets/instagram.png" alt="instagram icon" />
+                    <img class="mediaIcon" src="/assets/facebook.png" alt="faceBook icon" />
+                    <img class="mediaIcon" src="/assets/linkedin.png" alt="linkedin icon" />
+                </div>
+            </div>
+        </div>
+        <div class="help">
+            <a href="/pages/faqs.html">
+                <p class="footerTitles" data-footerTitle="help">help</p>
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>

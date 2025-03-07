@@ -1,0 +1,86 @@
+:root {
+	--footerContainerBkg: #333333;
+	--footerContainerHeight: 250px;
+	--footerTitlesColor: white;
+	--footerTitlesFontStyle: bold;
+	--footerTitlesSize: 25px;
+	--mediaIconSize:45px;
+	--suportAndMediaWidth:180px;
+	--hoverLinkColor:#F1723D;
+  }
+  
+  .footerContainer {
+	gap: 100px;
+	display: flex;
+	background-color: var(--footerContainerBkg);
+	height: var(--footerContainerHeight);
+	padding: 15px;
+	margin: opx;
+  }
+  
+  .footerTitles{
+	margin: 0;
+	color: var(--footerTitlesColor);
+	font-weight: var(--footerTitlesFontStyle);
+	font-size: var(--footerTitlesSize);
+  }
+  
+  a{
+	color: var(--footerTitlesColor);
+  }
+  
+  .footerTitles[data-footerTitle="help"]{
+	background-color: transparent;
+	text-decoration: none;
+  }
+  
+  .footerTitles:hover[data-footerTitle="help"]{
+	background-color: transparent;
+	text-decoration: underline;
+	color: var(--hoverLinkColor);
+  }
+  
+  .footerNormalText{
+	color: var(--footerTitlesColor);
+  }
+  
+  .suportAndMedia{
+	display: flex;
+	width: var(--suportAndMediaWidth);
+	flex-direction: column;
+  }
+  
+  .ContactsInfos {
+	height: fit-content;
+  }
+  
+  .suportInfos {
+	height: fit-content;
+  }
+  
+  .socialMedia{
+	  width: var(--suportAndMediaWidth);
+	  height: fit-content;
+  }
+  
+  .mediaIconsContainer{
+	margin-top: 10px;
+  }
+  
+  .mediaIcon{
+	background-color: white;
+	width: var(--mediaIconSize);
+	padding: 2px;
+  }
+  
+  .list {
+	padding-left: 8px;
+	list-style: inside;
+  }
+  
+  .help{
+	display: flex;
+	width: 90%;
+	justify-content: flex-end;
+	align-items: flex-end;
+  }

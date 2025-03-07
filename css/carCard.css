@@ -1,0 +1,65 @@
+@import url("variables.css");
+* {
+    font-family: var(--font-family);
+}
+.carCardsContainer{
+    height: 80vh;
+}
+.carCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 350px;
+    height: 450px;
+    background-color: var(--bckgWhite);
+    border: 1px solid var(--orange);
+    border-radius: var(--border-radius-medium);
+    margin: 16px;
+    padding: 16px;
+    box-shadow: var(--shadow-orange);
+}
+.carName{
+    font-size: var(--font-size-large);
+    font-weight: 600;
+}
+.carType{
+    font-size: var(--font-size-small);
+    font-weight: 400;
+}
+.carFeatures{
+    margin-top: var(--margin-medium);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
+.featureBox{
+    height: 40px;
+    background-color: var(--orange);
+    color: var(--bckgWhite);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border-radius: var(--border-radius-small);
+}
+.featureBox:nth-child(1){
+    width: 40px;
+}
+.featureBox:nth-child(2){
+    width: 100px;
+}
+.featureBox:nth-child(3){
+    width: 80px;
+}
+.featureBox:nth-child(4){
+    width: 60px;
+}
+.carPrice{
+    margin-top: var(--margin-large);
+}
+.price{
+    font-size: var(--font-size-large);
+    font-weight: 600;
+}

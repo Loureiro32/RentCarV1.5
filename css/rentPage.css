@@ -1,0 +1,325 @@
+@import url("variables.css");
+@import url("/css/navBar.css");
+@import url("/css/footer.css");
+
+* {
+	font-family: var(--font-family);
+	box-sizing: border-box;
+}
+
+/* ================================= */
+/** MAIN LAYOUT - From rentPage.css */
+/* ================================= */
+main {
+	padding-top: 80px;
+}
+
+/* ================================= */
+/* *SEARCH BAR COMPONENT - From searchBar.css */
+/* ================================= */
+.searchContainer {
+	width: 100%;
+	height: 150px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: var(--margin-medium) 0;
+}
+.searchBarContainer {
+	width: 850px;
+	height: 100px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	box-shadow: var(--shadow-orange);
+	border-radius: var(--border-radius-medium);
+}
+.searchBox {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 180px;
+	height: 40px;
+	border: var(--search-box);
+	border-radius: var(--border-radius-small);
+}
+.searchBox > input {
+	width: 100%;
+	border: none;
+	border-radius: var(--border-radius-small);
+	font-family: var(--font-family);
+	padding-left: var(--padding-small);
+	background-color: transparent;
+}
+.searchIconContainer {
+	display: flex;
+	border: none;
+	background-color: transparent;
+	text-decoration: none;
+	cursor: pointer;
+}
+input[type = "text"], input[type = "text"]:focus, input[type = "text"]:hover , input[type = "text"]:active, input[type = "text"]:focus-visible , input[type = "text"]:focus-within,input[type = "date"], input[type = "date"]:focus, input[type = "date"]:hover , input[type = "date"]:active, input[type = "date"]:focus-visible , input[type = "date"]:focus-within {
+    outline: none;
+    border-color: none;
+    box-shadow: none;
+}
+
+/* ================================= */
+/* *FILTER COMPONENT - From filterRent.css */
+/* ================================= */
+* {
+	font-family: var(--font-family);
+}
+.filtersContainer {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+    margin: var(--margin-large) 0;
+}
+.filters {
+	display: flex;
+	width: 850px;
+	flex-direction: row;
+	align-items: center;
+	gap: 16px;
+}
+.filter {
+	position: relative;
+}
+.filter > button {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	background-color: var(--bckgWhite);
+	color: black;
+	font-size: var(--font-size-small);
+	font-weight: 600;
+	align-self: center;
+	border: 1px solid var(--orange);
+	border-radius: var(--border-radius-small);
+	height: 40px;
+}
+button > img {
+	width: 16px;
+	height: 16px;
+}
+.fuelBtn {
+	width: 80px;
+}
+.priceBtn,
+.carTypeBtn,
+.brandBtn,
+.seatsBtn {
+	width: 100px;
+}
+.carTypeBtn {
+	width: 120px;
+}
+
+.dropdownContainers {
+	width: 850px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.dropdownContainers > div {
+	position: absolute;
+	background: var(--bckg-grey);
+	border: 1px solid var(--orange);
+	border-radius: var(--border-radius-small);
+	padding: 10px;
+	margin-top: 5px;
+	z-index: 10;
+}
+
+.hidden {
+	display: none;
+}
+
+.priceDropdown {
+	width: 200px;
+}
+
+.priceRange {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: var(--padding-small);
+}
+input[type="range"] {
+	appearance: none;
+	width: 100%;
+	height: 8px;
+	background: var(--orange);
+	border-radius: 5px;
+	outline: none;
+}
+input[type="range"]::-webkit-slider-thumb {
+	appearance: none;
+	width: 20px;
+	height: 20px;
+	background: var(--bckg-grey);
+	border: 1px solid var(--orange);
+	border-radius: 50%;
+	cursor: pointer;
+}
+.priceDropdown {
+	left: 0;
+}
+.carTypeDropdown {
+	left: 118px;
+}
+.carTypeDropdown {
+	width: 200px;
+	height: 130px;
+}
+.carType,
+.brand,
+.seats,
+.fuel {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	padding-bottom: var(--padding-small);
+}
+label {
+	font-size: var(--font-size-small);
+	font-weight: 500;
+}
+input[type="checkbox"] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	width: 20px;
+	height: 20px;
+	border: 2px solid var(--orange);
+	border-radius: 50%;
+	outline: none;
+	cursor: pointer;
+	background: transparent;
+}
+
+.brandDropdown {
+	left: 252px;
+}
+.seatsDropdown {
+	left: 372px;
+}
+.fuelDropdown {
+	left: 482px;
+}
+
+/* ================================= */
+/* * CAR CARD COMPONENT - From carCard.css */
+/* ================================= */
+.cardLink {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    width: 350px;
+    height: 450px;
+}
+
+.cardLink:visited, 
+.cardLink:hover, 
+.cardLink:active {
+    color: inherit;
+    text-decoration: none;
+}
+.carCardsContainer {
+	height: 80vh;
+    padding: var(--padding-large);
+}
+.carCard {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 350px;
+	height: 450px;
+	background-color: var(--bckgWhite);
+	border: 1px solid var(--orange);
+	border-radius: var(--border-radius-medium);
+	margin: 16px;
+	padding: 16px;
+	box-shadow: var(--shadow-orange);
+	transition: ease 0.5s;
+	overflow: hidden;
+}
+
+.whenHover {
+	position: absolute;
+	display: flex;
+	padding: 16px;
+	justify-content: center;
+	align-items: center;
+	left: 0;
+	top: 0;
+	border-radius: var(--border-radius-medium);
+	background-color: rgba(255, 255, 255, 0.8);
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+	pointer-events: none;
+}
+
+.whenHover > p {
+	font-size: var(--font-size-large);
+	font-weight: 600;
+	color: var(--orange);
+}
+
+.carCard:hover {
+	cursor: pointer;
+}
+
+.carCard:hover .whenHover {
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.carName {
+	font-size: var(--font-size-large);
+	font-weight: 600;
+}
+.carType {
+	font-size: var(--font-size-small);
+	font-weight: 400;
+}
+.carFeatures {
+	margin-top: var(--margin-medium);
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 16px;
+}
+.featureBox {
+	height: 40px;
+	background-color: var(--orange);
+	color: var(--bckgWhite);
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	border-radius: var(--border-radius-small);
+}
+.featureBox:nth-child(1) {
+	width: 40px;
+}
+.featureBox:nth-child(2) {
+	width: 100px;
+}
+.featureBox:nth-child(3) {
+	width: 80px;
+}
+.featureBox:nth-child(4) {
+	width: 60px;
+}
+.carPrice {
+	margin-top: var(--margin-large);
+}
+.price {
+	font-size: var(--font-size-large);
+	font-weight: 600;
+}

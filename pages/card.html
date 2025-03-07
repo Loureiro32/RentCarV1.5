@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/variables.css" />
+    <link rel="stylesheet" href="/css/card.css" />
+  </head>
+  <body>
+    <main>
+      <div class="cardInfosContainer">
+        <form action="" class="addNewCard">
+          <label for="cardNmbr"> Insert card number </label>
+          <input
+            type="text"
+            name="cardNmbr"
+            id="cardNmbrInput"
+            placeholder="1234 1234 1234 1234"
+          />
+
+          <label for="CardholderName"> Insert Cardholder Name</label>
+          <input
+            type="text"
+            name="cardNmbr"
+            id="cardNmbrInput"
+            placeholder="Jane doe"
+          />
+
+          <div class="alignDateAndCVV">
+            <div class="alignDate">
+              <label for="ExpirationDate"> Insert Expiration Date </label>
+              <input
+                type="text"
+                name="CardholderName"
+                id="CardholderNameInput"
+                placeholder="mm/yy"
+              />
+            </div>
+            <div class="alignCVV">
+              <label for="CVV"> Insert CVV </label>
+              <input
+                type="text"
+                name="cardCvv"
+                id="cardCVVInput"
+                placeholder="000"
+              />
+            </div>
+          </div>
+            <input type="submit" value="add Card"  />
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,148 @@
+@import url("/css/variables.css");
+@import url("/css/navBar.css");
+@import url("/css/footer.css");
+
+* {
+	font-family: var(--font-family);
+}
+
+main{
+    padding-bottom: 50px;
+}
+
+.loginRegister {
+	display: flex;
+	width: 620px;
+	justify-content: center;
+}
+
+.log,
+.reg, .reg2 {
+	box-sizing: border-box;
+	padding: var(--padding-label);
+	padding-top: 0px;
+	padding-bottom: 0px;
+	font-size: 32px;
+	font-family: var(--font-family);
+	color: var(--color);
+}
+
+.reg {
+	border-left: var(--border-label);
+}
+
+.form{
+	display: flex;
+	flex-flow: column wrap;
+	height: 756px;
+	width: 1174px;
+	border: var(--border-label);
+	border-radius: 10px;
+	padding-top: 50px;
+	margin-left: 150px;
+	margin-top: 50px;
+	background-color: rgba(208, 202, 190, 0.25);
+	justify-items: flex-start;
+}
+
+.form2{
+    display: flex;
+	flex-flow: column wrap;
+	width: 1174px;
+	border: var(--border-label);
+	border-radius: 10px;
+	margin-left: 150px;
+	margin-top: 50px;
+	background-color: rgba(208, 202, 190, 0.25);
+	justify-items: flex-start;
+    height:1140px
+}
+
+.socialaccount {
+	display: flex;
+	width: 100%;
+	height: 42px;
+	justify-content: center;
+	gap: 20px;
+}
+
+.social {
+	display: flex;
+	align-items: center;
+	padding: 5px;
+	padding-right: 10px;
+	gap: 5px;
+}
+
+img {
+	width: 25px;
+	height: 25px;
+	align-self: center;
+}
+
+a,a:hover {
+	text-decoration: none;
+}
+
+.fields {
+	margin-left: 145px;
+	margin-right: 145px;
+	margin-top: 120px;
+    margin-bottom: 145px;
+	display: flex;
+	flex-flow: row wrap;
+	width: 885px;
+	height: auto;
+	gap: 60px;
+
+}
+
+#fields {
+	border-radius: 60px;
+	background-color: rgba(255, 255, 255, 0.5);
+	border: 0.5px solid lightgrey;
+	width: 100%;
+	height: 40px;
+	padding-left: var(--padding-label);
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.emailAndPwd {
+	display: flex;
+	flex-basis: 100%;
+	flex-flow: column;
+	font-family: var(--font-family);
+	color: var(--color);
+	font-size: 24px;
+	gap: 20px;
+}
+
+.text {
+	border-left: var(--border-label);
+	padding-left: var(--padding-label);
+	font-family: var(--font-family);
+}
+
+.text > img {
+	width: 20px;
+	height: 20px;
+}
+
+.forget {
+    width: fit-content;
+	padding-left: var(--padding-label);
+	font-family: var(--font-family);
+    font-size: 13px;
+    text-decoration: underline;
+}
+
+.forget:hover{
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.edit:hover{
+cursor: pointer;
+scale: 1.15;
+}

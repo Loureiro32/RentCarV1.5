@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment</title>
+    <link rel="stylesheet" href="/css/variables.css" />
+    <link rel="stylesheet" href="/css/navBar.css" />
+    <link rel="stylesheet" href="/css/paymentPage.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+    <script src="/js/home-page.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navBar">
+            <div class="leftNav">
+                <a href="/pages/homePage.html">
+                    <div class="mainImage"> </div>
+                </a>
+            </div>
+            <div class="rightNav">
+                <a href="/pages/login.html"> <button class="button login">Login</button></a>
+                <a href="/pages/register.html"><button class="button register">Register</button></a>
+                <a href="/pages/dadosPessoais.html">
+                    <div class="buttonProfile"></div>
+                </a>
+                <div class="buttonCompactMenu"></div>
+            </div>
+        </nav>
+
+        <nav class="offScreenMenu">
+            <ul>
+                <li>Your Profile</li>
+                <li>Login</li>
+                <li>Sign up</li>
+                <li>Fleet</li>
+                <li>About us</li>
+                <li>Contacts</li>
+                <li>Insurance & protection</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="paymentContainer">
+            <section class="sectionTitle">
+                <h2>Who is driving?</h2>
+            </section>
+            
+            <form class="paymentForm">
+                <div class="formRow twoColumns">
+                    <div class="formGroup">
+                        <label class="formLabel">First Name</label>
+                        <input type="text" class="formInput" placeholder="your true name" />
+                    </div>
+                    <div class="formGroup">
+                        <label class="formLabel">Last Name</label>
+                        <input type="text" class="formInput" placeholder="your true last name" />
+                    </div>
+                </div>
+
+                <div class="formRow">
+                    <div class="formGroup">
+                        <label class="formLabel">E-mail</label>
+                        <input type="email" class="formInput" placeholder="currentalnewuseremail@gmail.com" />
+                    </div>
+                </div>
+
+                <!-- todo make botha prefix and number be in same div for eaiser layout -->
+                <div class="formRow">
+                    <div class="formGroup">
+                        <label class="formLabel">Phone Number</label>
+                        <div class="phoneContent">
+                            <input type="text" class="formInput prefix" placeholder="+351" />
+                            <input type="text" class="formInput" placeholder="9xxxxxxxx" />
+                        </div>
+                    </div>
+                </div>
+
+                <section class="sectionTitle">
+                    <h2>Payment Method</h2>
+                </section>
+
+                <div class="formRow">
+                    <div class="formGroup">
+                        <label class="formLabel">Card Number</label>
+                        <input type="text" class="formInput" placeholder="1234 1234 1234 1234" />
+                    </div>
+                </div>
+
+                <div class="formRow">
+                    <div class="formGroup">
+                        <label class="formLabel">Cardholder Name</label>
+                        <input type="text" class="formInput" placeholder="Jane Doe" />
+                    </div>
+                </div>
+
+                <div class="formRow twoColumns">
+                    <div class="formGroup">
+                        <label class="formLabel">Expiration Date</label>
+                        <input type="text" class="formInput" placeholder="MM/YY" />
+                    </div>
+                    <div class="formGroup">
+                        <label class="formLabel">CVV</label>
+                        <input type="text" class="formInput" placeholder="000" />
+                    </div>
+                </div>
+
+                <section class="sectionTitle">
+                    <h2>Want receipt fill out info</h2>
+                </section>
+
+                <div class="formRow">
+                    <div class="formGroup">
+                        <label class="formLabel">Country</label>
+                        <input type="text" class="formInput" placeholder="Portugal" />
+                    </div>
+                </div>
+
+                <div class="formRow">
+                    <div class="formGroup">
+                        <label class="formLabel">Address</label>
+                        <input type="text" class="formInput" placeholder="where you live" />
+                    </div>
+                </div>
+
+                <div class="formRow twoColumns">
+                    <div class="formGroup">
+                        <label class="formLabel">City</label>
+                        <input type="text" class="formInput" placeholder="Porto" />
+                    </div>
+                    <div class="formGroup">
+                        <label class="formLabel">Zip Code</label>
+                        <input type="text" class="formInput" placeholder="4400 - 110" />
+                    </div>
+                </div>
+
+                <div class="formRow">
+                    <div class="formGroup">
+                        <label class="formLabel">Identification Number</label>
+                        <input type="text" class="formInput" placeholder="239345799" />
+                    </div>
+                </div>
+
+                <div class="totalSection">
+                    <div class="totalLabel">Total</div>
+                    <div class="totalAmount">200€</div>
+                </div>
+
+                <div class="formRow">
+                    <button type="submit" class="payButton">Pay and Rent</button>
+                </div>
+
+                <div class="termsAgreement">
+                    <p>I have read and accept the Rental Information, the Terms and Conditions and the Privacy Policy and acknowledge that I am making a reservation with a prepaid rate in which the total rental price of the reservation is immediately charged to the payment method I have provided.</p>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer class="footerContainer">
+        <div class="ContactsInfos footerNormalText">
+            <p class="footerTitles">Contacts</p>
+            <p>Email: <span> rentHere@gmail.com</span></p>
+            <p>Phone: <span> 22765398</span></p>
+            <p>Locations: <span>Portugal, Porto, Trindade</span></p>
+            <p>Schedules: <span> Week open: 8am close: 7pm </span></p>
+        </div>
+
+        <div class="suportAndMedia">
+            <div class="suportInfos footerNormalText">
+                <p class="footerTitles">ClientSuport</p>
+                <ul class="list">
+                    <li>Client Area</li>
+                    <li>Complaints Book</li>
+                    <li>Payment Methods</li>
+                </ul>
+            </div>
+
+            <div class="socialMedia">
+                <p class="footerTitles">Social Media</p>
+
+                <div class="mediaIconsContainer">
+                    <img class="mediaIcon" src="/assets/instagram.png" alt="instagram icon" />
+                    <img class="mediaIcon" src="/assets/facebook.png" alt="faceBook icon" />
+                    <img class="mediaIcon" src="/assets/linkedin.png" alt="linkedin icon" />
+                </div>
+            </div>
+        </div>
+        <div class="help">
+            <a href="/pages/faqs.html">
+                <p class="footerTitles" data-footerTitle="help">help</p>
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
